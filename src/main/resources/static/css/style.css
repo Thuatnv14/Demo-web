@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
@@ -8,7 +8,7 @@ body {
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -19,31 +19,41 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .search-container {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .search-container input[type=text] {
-    padding: 5px;
-    width: 200px;
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .search-container button {
-    padding: 5px;
+    padding: 8px 12px;
     background-color: white;
     color: #4CAF50;
-    border: none;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #4CAF50;
+    color: white;
 }
 
 main {
     padding: 20px;
-    background-color: white; /* Màu nền trắng cho phần chính */
+    background-color: white;
     border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho phần chính */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px; /* Khoảng cách với các phần khác */
 }
 
 footer {
