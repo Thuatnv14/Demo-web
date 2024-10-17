@@ -10,10 +10,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
     @Autowired
     private PlaceService place_service;
+
     @GetMapping("/")
     public String homePage(Model model) {
-        model.addAttribute("title","Welcome to Ha Noi Trip");
-        model.addAttribute("places",place_service.getAllPlaces());
-        return "home";
+        model.addAttribute("title", "Welcome to Ha Noi Trip");
+        model.addAttribute("places", place_service.getAllPlaces());
+        return "home"; // Đảm bảo tên này khớp với file home.html
     }
 }
